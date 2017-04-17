@@ -23,5 +23,8 @@ before_install: |
 r_packages:
   - covr
 
+r_github_packages:
+  - joshuaulrich/quantmod@144_getFX
+
 after_success:
   - Rscript -e 'library(covr); codecov()'
